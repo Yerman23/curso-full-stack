@@ -1,0 +1,430 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /** Reset para REMS - 62.5% es = a 10px de 16px **/
+
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    /* estilo de letra */
+    font-size: 1.6rem;
+    /*tamaño de letra */
+    line-height: 2;
+
+}
+
+/* globales */
+img {
+    max-width: 100%;
+    /* hace las imagenes responsivas */
+    /* se usa siempre en todos los proyectos */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 95%;
+    /* hace que se centre un poco de los bordes */
+}
+
+.contenedor {
+    width: 100%;
+    margin: 0 auto;
+    /* hace que se centre un poco de los bordes */
+}
+
+/* BOTONES */
+.boton {
+    color: white;
+    font-weight: 400;
+    /* aumenta el grosor de las letras */
+    text-decoration: none;
+    /* Elimina la linea debajo de los links o los A */
+    font-size: 1.8rem;
+    /* aumenta el tamaño de las letras */
+    padding: 1rem 3rem;
+    /* 1 rem arriba y abajo y 3 rem izquierda y derecha*/
+    /* padding es espacio hacia dentro del contenido */
+    /* margin agrega separacion hacia afuera del contenido */
+    margin-top: 3rem;
+    /* le agrega un espacio entre los demas elementos */
+    display: inline block;
+    /* display block toma todo el espacio disponible */
+    /* todos los A(links) vienen predefinidos con un Display INLINE por lo que hay que cambiarlo */
+    text-align: center;
+    /* centra el texto del boton*/
+    border: none;
+    border-radius: 40px 40px;
+    /* le da forma al boton */
+}
+
+.boton-amarillo {
+    background-color: #E0752F;
+    /* toma todo el espacio disponible */
+}
+
+/** UTILIDADES **/
+.contenido-centrado {
+    max-width: 800px;
+    /* le dice que de aqui no se pase para que el texto este mas centrado */
+}
+
+.seccion {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.fw-300 {
+    font-weight: 400;
+}
+
+.centrar-texto {
+    text-align: center;
+}
+
+/** HEADER **/
+
+.header {
+    background-image: url(../imagen/slider-1.png);
+    height: 100vh;
+    /* le da altura a la imagen */
+    min-height: 60rem;
+    /** = 600 px **/
+    background-position: center center;
+    background-size: cover;
+    /** acomoda la imagen y le saca los espacios del costado **/
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    /* Elimina la linea debajo de los links o los A */
+    font-size: 1.8rem;
+    /** = 18px **/
+    margin-right: 2rem;
+    padding: 20px;
+}
+
+.contenedor-nav {
+    border-bottom: 1px solid #cc9068;
+    /** le agrega un borde al navbar **/
+    display: flex;
+    /** Posiciona elementos uno alado del otro **/
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    /* position: fixed; el navbar sigue al scrollear */
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 2000;
+}
+
+.navbar a:hover {
+    color: #e7af89;
+}
+
+.navbar a:last-of-type {
+    margin-right: 0;
+}
+
+.box2 {
+    /* los divs ya vienen con display block que los pone en columna */
+    padding: 380px 120px;
+    text-align: left;
+    color: white;
+    line-height: 2;
+}
+
+.box2 a {
+    color: white;
+    border-bottom: none;
+}
+
+.box2 h1 {
+    font-weight: inherit;
+    font-size: 5rem;
+    max-width: 55rem;
+    line-height: 1;
+    /* esto le dice cuantas lineas haya de espacio entre los renglones de un texto */
+    padding-bottom: 3rem;
+    font-weight: 700;
+}
+
+.box2 p {
+    padding-bottom: 3rem;
+    max-width: 45rem;
+    line-height: 1;
+    /* esto le dice cuantas lineas haya de espacio entre los renglones de un texto */
+    font-size: 2rem;
+    font-weight: 400;
+    padding-bottom: 3rem;
+}
+
+/** CONTENIDO ABOUT **/
+
+span {
+    color: #E0752F;
+}
+
+.contenedor-about {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    margin: 0 0 400px 0;
+}
+
+.contenido-color {
+    position: relative;
+    top: 200px;
+    left: 0;
+    width: 40px;
+    height: 400px;
+    background: #E0752F 0% 0%;
+    opacity: 1;
+
+}
+
+.contenido-about {
+    position: relative;
+    left: 200px;
+    top: 50px;
+    padding-left: 200px;
+    display: inline-block;
+    font-size: 1.6rem;
+    align-items: center;
+}
+
+.contenido-about p {
+    /* si saco esto aparece el div con naranja a la izquierda */
+    width: 80rem;
+    height: 200px;
+}
+
+.contenedor-about h2 {
+    padding-bottom: 2rem;
+    line-height: 1;
+    /* esto le dice cuantas lineas haya de espacio entre los renglones de un texto */
+    font-size: 4rem;
+    max-width: 400px;
+}
+
+/* PRODUCTS */
+
+.contenedor-products {
+    /* MEDIDAS FIJAS SON PX */
+    background-position: center;
+    background-size: cover;
+    /** acomoda la imagen y le saca los espacios del costado **/
+    max-width: 966px;
+    width: 100%;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/*.imagen {
+  width: 100%;
+} */
+
+.contenido-products {
+    box-sizing: content-box;
+    background: #E0752F 0% 0% no-repeat padding-box;
+    width: 370px;
+    /* esto le da un ancho y alto a la pagina */
+    height: 250px;
+    /* lo mismo que arriba */
+    padding: 4rem 3rem 0 6rem;
+    /* le da un espacio a los costados y alto */
+    position: absolute;
+    /* esto hace que pueda mover la caja para cualquier lado dandole valores */
+    right: 0;
+    /* le digo que se aleje de la imagen hacia la derecha 360ox */
+    top: 386px;
+    /* le digo que se aleje de arriba */
+    color: white;
+    /* esto le dice cuantas lineas haya de espacio entre los renglones de un texto */
+}
+
+.contenido-products h2 {
+    max-width: 20rem;
+    line-height: 1.2;
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 1rem;
+}
+
+.contenido-products i {
+    text-transform: uppercase;
+    /* mayusculas */
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.contenido-products p {
+    font-weight: 300;
+    line-height: 22px;
+    font-size: 2rem;
+    padding-top: 3rem;
+}
+
+/** SERVICES ACCORDION **/
+
+.contenedor-section {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    height: 100vh;
+    padding-top: 10rem;
+}
+
+.accordion {
+    width: 45% !important;
+    position: absolute;
+    left: 300px;
+    top: 300px;
+    z-index: 2000;
+}
+
+.imagen-services {
+    right: 200px;
+    position: absolute;
+}
+
+.accordion-item {
+    padding: 22px 37px !important;
+    font-size: 2rem;
+}
+
+/** CONTACTO **/
+.contact {
+    height: 100vh;
+    max-height: 768px;
+    min-height: 600px;
+    width: 100%;
+    background-color: #F2F4F1;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 15rem;
+}
+
+.color-fondo {
+    background-color: #F2F4F1;
+}
+
+.contact_container,
+.contact_img {
+    flex: 1 1 50%;
+}
+
+.contact_img {
+
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.contact_img img {
+    max-width: 100%;
+    width: 70%;
+}
+
+.contact_container {
+    padding-left: 100px;
+}
+
+.contact_title {
+    width: 100%;
+    line-height: 45px;
+    font-family: "Poppins";
+    font-size: 39px;
+    color: #343434;
+    font-weight: 600;
+    letter-spacing: 0.55px;
+    text-transform: uppercase;
+}
+
+.contact_parraf {
+    margin-bottom: 44px;
+    font-family: "Poppins";
+    font-size: 39px;
+    color: #E0752F;
+    line-height: 45px;
+    font-weight: 600;
+    letter-spacing: 0.55px;
+    text-transform: uppercase;
+}
+
+.input-group,
+.input-group input,
+.message {
+    border: none;
+}
+
+::placeholder {
+    font-family: "Roboto";
+    font-size: 20px;
+    color: #5F6368;
+    font-weight: 500;
+}
+
+.input-group input,
+.message {
+    padding: 20px 0;
+    width: 90%;
+    background: transparent;
+    border-bottom: 2px solid #E3E3E3;
+}
+
+.message {
+    resize: none;
+}
+
+.btn-send {
+    text-decoration: none;
+    background-color: #E0752F;
+    border: none;
+    border-radius: 25px;
+    padding: 14px 54px;
+    cursor: pointer;
+    font-family: "Roboto";
+    font-size: 16px;
+    color: #FFFFFF;
+    font-weight: 500;
+    display: inline-block;
+    margin-top: 39px;
+}
+
+/** FOOTER **/
+
+.footer {
+    background-color: #070707;
+  }
+  
+  .footer_container {
+    width: 100%;
+    padding: 29px 100px 29px 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .footer_parraf {
+    font-family: "Roboto";
+    font-size: 16px;
+    color: #DCE1DA;
+    font-weight: 400;
+  }
